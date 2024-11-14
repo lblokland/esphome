@@ -43,9 +43,13 @@
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************/
-
+#include "esphome.h"
 #include "SparkFun_STHS34PF80_Arduino_Library.h"
 #include <Wire.h>
+
+class AdvancedBlinkComponent : public Component
+{
+public:
 
 STHS34PF80_I2C mySensor;
 
@@ -143,3 +147,4 @@ void loop()
     }
   }
 }
+};
