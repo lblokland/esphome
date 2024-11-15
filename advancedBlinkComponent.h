@@ -1,7 +1,7 @@
 
 #include "esphome.h"
 
-#define LED_PIN 13
+#define LED_PIN 18
 
 class AdvancedBlinkComponent : public Component
 {
