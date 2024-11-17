@@ -44,10 +44,14 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************/
 #include "esphome.h"
+/** 
 #include "SparkFun_STHS34PF80_Arduino_Library.h"
-#include <Wire.h>
+#include <Wire.h> 
+**/
 
-class AdvancedBlinkComponent : public Component
+#define LED_BUILTIN 1
+
+class STHS34PF80Component : public Component
 {
 public:
 
