@@ -44,12 +44,11 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************/
 #include "esphome.h"
-/** 
 #include "SparkFun_STHS34PF80_Arduino_Library.h"
 #include <Wire.h> 
-**/
 
-#define LED_BUILTIN 1
+
+#define LED_PIN 18
 
 class STHS34PF80Component : public Component
 {
@@ -131,9 +130,9 @@ void loop()
       Serial.print("Presence: ");
       Serial.print(presenceVal);
       Serial.println("cm^-1");
-      digitalWrite(LED_BUILTIN, HIGH);
+      digitalWrite(LED_PIN, HIGH);
       delay(700);              
-      digitalWrite(LED_BUILTIN, LOW);   
+      digitalWrite(LED_PIN, LOW);   
       delay(300); 
     }
 
